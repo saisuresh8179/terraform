@@ -20,7 +20,6 @@ resource "aws_iam_user" "my_user" {
 
 resource "aws_iam_user_login_profile" "example" {
   user    = aws_iam_user.my_user.name
-  #pgp_key = "keybase:saisuresh"
   password_reset_required = true
 }
 resource "aws_iam_access_key" "my_user_key" {
