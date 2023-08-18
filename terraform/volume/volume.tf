@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 data "aws_instance" "existing_instance" {
-	instance_id = "i-0b019a6253bf920e7"
+	instance_id = "<enter your instance id>"
 }
 resource "aws_ebs_volume" "volume" {
 
